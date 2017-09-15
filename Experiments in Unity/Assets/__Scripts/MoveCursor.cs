@@ -20,6 +20,8 @@ public class MoveCursor : MonoBehaviour {
 	public Vector3 rotation;
 	public float rotationspeed;
 
+	public Vector3 startingposition;
+
 	public Vector3 position1;
 	public Vector3 position2;
 	//public Vector3 rotation2;
@@ -84,6 +86,7 @@ public class MoveCursor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		theobject.transform.Rotate (rotation, rotationspeed);
+
 		//if (Input.GetKeyDown (KeyCode.Space))
 	//	{
 		if (toggleonoff == true) {
@@ -91,6 +94,7 @@ public class MoveCursor : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.Q)) {
 				//print ("hey");
 				theobject.transform.position = position1;
+
 				//theobject.transform.Rotate (rotation1, rotationspeed1);
 			}
 			if (Input.GetKeyDown (KeyCode.W)) {
