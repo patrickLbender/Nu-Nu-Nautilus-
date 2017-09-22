@@ -25,7 +25,7 @@ public class onTrigger : MonoBehaviour {
 		AudioSource audio = GetComponent<AudioSource>();
 		audio.Play();
 		Light lamp = GetComponent<Light>();
-		lamp.intensity = 2;
+		lamp.intensity = 12;
 
 
 
